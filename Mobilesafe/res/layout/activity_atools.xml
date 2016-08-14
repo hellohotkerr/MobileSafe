@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 将对应的属性抽取到样式中去 -->
+    <TextView
+        android:text="高级工具"
+       style="@style/TitleStyle" />
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_number_btn_bg"
+        android:text="查询号码归属地"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="queryAddress"/>
+   
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_contact_button"
+        android:text="短信备份"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="backupsms"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_atools_sms"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_contact_button"
+        android:text="短信还原"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="restoresms"
+        />
+    
+   
+
+   
+
+</LinearLayout>

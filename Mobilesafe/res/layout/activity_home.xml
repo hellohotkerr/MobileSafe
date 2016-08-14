@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 将对应的属性抽取到样式中去 -->
+    <TextView
+        android:text="功能列表"
+       style="@style/TitleStyle" />
+    <!-- android:ellipsize设置省略点所在位置 -->
+    <!-- 想让文字出现跑马灯效果，必须让其获取焦点 -->
+    <!-- android:marqueeRepeatLimit="marquee_forever"一直滚动的属性 -->
+    <!-- 自定义控件达到滚动效果(其实就是重写原有的TextView，让其一直获取焦点即可) -->
+    <!--
+         <TextView 
+        android:text="塞下秋来风景异，衡阳雁去无留意。四面边声连角起，千嶂里，长烟落日孤城闭。
+		浊酒一杯家万里，燕然未勒归无计。羌管悠悠霜满地，人不寐，将军白发征夫泪。"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:textColor="#000"
+		android:singleLine="true"/>
+    -->
+
+    <com.itbaojin.mobilesafe.view.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text=" 明月几时有？把酒问青天。不知天上宫阙、今夕是何年？
+        	我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？  
+      	  转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？
+      	  人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。"
+        android:textColor="#000" />
+		<!-- android:numColumns指定列的数量 -->
+		<!-- android:verticalSpacing="10dp"指定内部条目竖直方向间距为10dp -->
+		<GridView 
+		    android:id="@+id/gv_home"
+		    android:numColumns="3"
+		    android:verticalSpacing="10dp"
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent"></GridView>
+
+</LinearLayout>

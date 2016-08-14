@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="serveurl"
+        android:id="@+id/string1"
+         android:layout_height="wrap_content" 
+         android:layout_width="wrap_content" 
+         translatable="false">http://192.168.1.103/updateInfo.html</string>
+    
+</resources>
